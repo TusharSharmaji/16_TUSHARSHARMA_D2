@@ -1,0 +1,312 @@
+ 
+  
+    
+
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+
+
+  
+    
+      
+      id
+      area
+      name
+      code
+      type
+      emblem
+      plan
+      currentSeason
+      numberOfAvailableSeasons
+      lastUpdated
+    
+  
+  
+    
+      0
+      2176
+      {'id': 2001, 'name': 'Africa', 'code': 'AFR', ...
+      Africa Cup
+      AC
+      CUP
+      https://crests.football-data.org/ac.png
+      TIER_FOUR
+      {'id': 2385, 'startDate': '2025-12-21', 'endDa...
+      2
+      2024-01-13T11:34:43Z
+    
+    
+      1
+      2166
+      {'id': 2001, 'name': 'Africa', 'code': 'AFR', ...
+      AFC Champions League
+      ACL
+      CUP
+      None
+      TIER_FOUR
+      {'id': 1559, 'startDate': '2022-04-06', 'endDa...
+      1
+      2023-02-26T12:57:33Z
+    
+    
+      2
+      2006
+      {'id': 2001, 'name': 'Africa', 'code': 'AFR', ...
+      WC Qualification CAF
+      QCAF
+      CUP
+      None
+      TIER_FOUR
+      {'id': 1609, 'startDate': '2023-11-15', 'endDa...
+      3
+      2022-03-13T18:51:44Z
+    
+    
+      3
+      2023
+      {'id': 2011, 'name': 'Argentina', 'code': 'ARG...
+      Primera B Nacional
+      PBN
+      LEAGUE
+      None
+      TIER_FOUR
+      {'id': 716, 'startDate': '2021-03-13', 'endDat...
+      5
+      2023-08-01T08:40:24Z
+    
+    
+      4
+      2024
+      {'id': 2011, 'name': 'Argentina', 'code': 'ARG...
+      Liga Profesional
+      ASL
+      LEAGUE
+      https://crests.football-data.org/LPDF.svg
+      TIER_TWO
+      {'id': 2470, 'startDate': '2026-01-25', 'endDa...
+      10
+      2024-09-13T16:34:03Z
+    
+    
+      ...
+      ...
+      ...
+      ...
+      ...
+      ...
+      ...
+      ...
+      ...
+      ...
+      ...
+    
+    
+      178
+      2178
+      {'id': 2267, 'name': 'World', 'code': 'INT', '...
+      FIFA Club World Cup
+      FCWC
+      CUP
+      None
+      TIER_TWO
+      {'id': 2376, 'startDate': '2025-06-15', 'endDa...
+      22
+      2025-05-14T13:22:23Z
+    
+    
+      179
+      2000
+      {'id': 2267, 'name': 'World', 'code': 'INT', '...
+      FIFA World Cup
+      WC
+      CUP
+      https://crests.football-data.org/wm26.png
+      TIER_ONE
+      {'id': 2398, 'startDate': '2026-06-11', 'endDa...
+      23
+      2025-12-08T05:32:32Z
+    
+    
+      180
+      2155
+      {'id': 2267, 'name': 'World', 'code': 'INT', '...
+      WC Qualification CONCACAF
+      QCCF
+      CUP
+      None
+      TIER_FOUR
+      {'id': 1651, 'startDate': '2024-03-18', 'endDa...
+      2
+      2021-11-11T10:39:10Z
+    
+    
+      181
+      2153
+      {'id': 2267, 'name': 'World', 'code': 'INT', '...
+      Summer Olympics
+      OLY
+      CUP
+      https://upload.wikimedia.org/wikipedia/commons...
+      TIER_FOUR
+      {'id': 1655, 'startDate': '2024-07-24', 'endDa...
+      2
+      2021-07-21T15:39:38Z
+    
+    
+      182
+      2167
+      {'id': 2267, 'name': 'World', 'code': 'INT', '...
+      FIFA Women's World Cup
+      WCF
+      CUP
+      https://crests.football-data.org/fwwc.svg
+      TIER_TWO
+      {'id': 1563, 'startDate': '2023-07-20', 'endDa...
+      1
+      2025-05-19T12:26:30Z
+    
+  
+
+183 rows × 10 columns
+
+    
+
+  
+    
+
+  
+    
+  
+    
+
+  
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  
+
+    
+      const buttonEl =
+        document.querySelector('#df-bf62244f-c62f-41be-975b-8dedaec8430f button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-bf62244f-c62f-41be-975b-8dedaec8430f');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    
+  
+
+
+  
+    
+      .colab-df-generate {
+        background-color: #E8F0FE;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        display: none;
+        fill: #1967D2;
+        height: 32px;
+        padding: 0 0 0 0;
+        width: 32px;
+      }
+
+      .colab-df-generate:hover {
+        background-color: #E2EBFA;
+        box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+        fill: #174EA6;
+      }
+
+      [theme=dark] .colab-df-generate {
+        background-color: #3B4455;
+        fill: #D2E3FC;
+      }
+
+      [theme=dark] .colab-df-generate:hover {
+        background-color: #434B5C;
+        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+        filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+        fill: #FFFFFF;
+      }
+    
+    
+
+  
+    
+  
+    
+    
+      (() => {
+      const buttonEl =
+        document.querySelector('#id_98f5b0fc-75de-4f91-9f67-ca8abec22363 button.colab-df-generate');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      buttonEl.onclick = () => {
+        google.colab.notebook.generateWithVariable('df');
+      }
+      })();
+    
+  
+
+    
+  
